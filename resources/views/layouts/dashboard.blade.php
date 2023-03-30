@@ -8,15 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicon.png') }}">
-    <title>E-Pembayaran SPP</title>
+    <title>Pembayaran SPP</title>
     <!-- Custom CSS -->
     <link href="{{ asset('assets/libs/chartist/dist/chartist.min.css') }}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ asset('dist/css/style.min.css') }}" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -56,8 +52,8 @@
                     <!-- ============================================================== -->
                     <a class="navbar-brand" href="{{ url('/dashboard') }}">                                            
                         <!-- Logo text -->
-                        <span class="logo-text">                          
-						<i class="mdi mdi-square-inc-cash"></i> E-Pembayaran SPP                             
+                        <span class="logo-text">                
+                            Pembayaran SPP                             
                         </span>
                     </a>
                     <!-- ============================================================== -->
@@ -88,7 +84,7 @@
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ url('assets/images/users/d3.jpg') }}" alt="user" class="rounded-circle" width="31"></a>
+                            {{-- <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ url('assets/images/users/d3.jpg') }}" alt="user" class="rounded-circle" width="31"></a> --}}
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
@@ -113,7 +109,7 @@
                         <li>
                             <!-- User Profile-->
                             <div class="user-profile d-flex no-block dropdown m-t-20">
-                                <div class="user-pic"><img src="{{ url('assets/images/users/d3.jpg') }}" alt="users" class="rounded-circle" width="40" /></div>
+                                {{-- <div class="user-pic"><img src="{{ url('assets/images/users/d3.jpg') }}" alt="users" class="rounded-circle" width="40" /></div> --}}
                                 <div class="user-content hide-menu m-l-10">
                                     <a href="javascript:void(0)" class="" id="Userdd" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <h5 class="m-b-0 user-name font-medium">{{ $user->name }}<i class="ml-2 fa fa-angle-down"></i></h5>
@@ -236,7 +232,6 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                Design by Xtreme Admin. Backend by <a href="https://github.com/ravialdo">Ravialdo</a>.
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->

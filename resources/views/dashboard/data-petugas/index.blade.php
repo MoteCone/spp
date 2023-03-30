@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('breadcrumb')
-     <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item">Dashboard</li>
 	<li class="breadcrumb-item active">Petugas</li>
 @endsection
 
@@ -11,19 +11,19 @@
 			<div class="card">
 				<div class="card-body">
 					<div class="card-title">Data Petugas</div>
-                              <a href="{{ url('dashboard/data-petugas/create') }}" class="btn btn-success btn-rounded float-right mb-3">
-                                 <i class="mdi mdi-plus-circle"></i> {{ __('Tambah Petugas') }}
-                              </a>
+                            <a href="{{ url('dashboard/data-petugas/create') }}" class="btn btn-success btn-rounded float-right mb-3">
+                                <i class="mdi mdi-plus-circle"></i> {{ __('Tambah Petugas') }}
+                            </a>
 						<div class="table-responsive mb-3">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">NO</th>
                                             <th scope="col">NAMA</th>
 								    <th scope="col">EMAIL</th>
                                             <th scope="col">LEVEL</th>
                                             <th scope="col">DIBUAT</th>
-								    <th scope="col"></th>                                        
+								    <th scope="col">AKSI</th>                                        
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -48,11 +48,11 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">NO</th>
                                             <th scope="col">TAHUN</th>
 								    <th scope="col">NOMINAL</th>
                                             <th scope="col">DIBUAT</th>
-								    <th scope="col"></th>                                        
+								    <th scope="col">AKSI</th>                                        
                                         </tr>
                                     </thead>
                                     <tbody>

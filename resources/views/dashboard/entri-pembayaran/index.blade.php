@@ -77,14 +77,14 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">NO</th>
                                             <th scope="col">PETUGAS</th>
 								    <th scope="col">NISN SISWA</th>
                                             <th scope="col">NAMA SISWA</th>
                                             <th scope="col">SPP</th>
                                             <th scope="col">JUMLAH BAYAR</th>
                                             <th scope="col">TANGGAL BAYAR</th>
-								    <th scope="col"></th>                                        
+								    <th scope="col">AKSI</th>                                        
                                         </tr>
                                     </thead>
                                     <tbody>

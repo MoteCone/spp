@@ -19,14 +19,14 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
+                                            <th scope="col">NO</th>
                                             <th scope="col">NISN</th>
 								    <th scope="col">NIS</th>
                                             <th scope="col">NAMA</th>
                                             <th scope="col">KELAS</th>
 								    <th scope="col">NOMOR TELEPON</th>
 								    <th scope="col">ALAMAT</th>
-								    <th scope="col"></th>                                        
+								    <th scope="col">AKSI</th>                                        
                                         </tr>
                                     </thead>
                                     <tbody>

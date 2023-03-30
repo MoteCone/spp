@@ -42,17 +42,17 @@
            <div class="col-md-12">
 			<div class="card">
 				<div class="card-body">
-					<div class="card-title">Data SPP</div>
+					<div class="card-title">Data Kelas</div>
                               
 						<div class="table-responsive mb-3">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">KELAS</th>
-								    <th scope="col">KEAHLIAN</th>
-                                            <th scope="col">DIBUAT</th>
-								    <th scope="col"></th>                                        
+                                          <th scope="col">NO</th>
+                                          <th scope="col">KELAS</th>
+								                  <th scope="col">KEAHLIAN</th>
+                                          <th scope="col">DIBUAT</th>
+								    <th scope="col">AKSI</th>                                        
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -61,18 +61,18 @@
 								@endphp
 								@foreach($kelas as $value)
                                         <tr>					    
-                                            <th scope="row">{{ $i }}</th>
-                                            <td>{{ $value->nama_kelas }}</td>
-								    <td>{{ $value->kompetensi_keahlian }}</td>
-                                            <td>{{ $value->created_at->format('d M, Y') }}</td>
+                                          <th scope="row">{{ $i }}</th>
+                                          <td>{{ $value->nama_kelas }}</td>
+								                  <td>{{ $value->kompetensi_keahlian }}</td>
+                                          <td>{{ $value->created_at->format('d M, Y') }}</td>
 					
-                                            <td>										                           
+                                          <td>										                           
                                	 		  <div class="hide-menu">
                                     			<a href="javascript:void(0)" class="text-dark" id="actiondd" role="button" data-toggle="dropdown">
                                        				<i class="mdi mdi-dots-vertical"></i>
                                     			</a>
                                     				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="actiondd">
-                                        			<a class="dropdown-item" href="{{ url('dashboard/data-kelas/'.$value->id.'/edit') }}"><i class="ti-pencil"></i> Edit </a>
+                                        		<a class="dropdown-item" href="{{ url('dashboard/data-kelas/'.$value->id.'/edit') }}"><i class="ti-pencil"></i> Edit </a>
 											<form method="post" action="{{ url('dashboard/data-kelas', $value->id) }}" id="delete{{ $value->id }}">
 												@csrf
 												@method('delete')
